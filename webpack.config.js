@@ -8,7 +8,7 @@ var targets = [
       path: __dirname + '/dist',
       filename: 'index.min.js',
       libraryTarget: 'var',
-      library: 'Search Modal'
+      library: 'SearchModal'
     },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({ minimize: true })

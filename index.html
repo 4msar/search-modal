@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="stylesheet" href="/dist/style.css">
+    <script src="/dist/index.min.js"></script>
+</head>
+<body>
+    <button>Open Search Modal</button>
+    
+    <script>
+        const button = document.querySelector('button');
+        const instance = window.SearchModal({
+            autoInit: true,
+            queryParam: "query",
+            data:[
+                {
+                    title: "Example",
+                    url: "/example"
+                },
+                {
+                    title: "Example 2",
+                    url: "/example-2"
+                }
+            ],
+            callback: (event, data) => {
+                console.log({ event, data });
+            }
+        });
+        button.addEventListener('click', () => {
+            instance.open();
+        });
+    </script>
+</body>
+</html>
