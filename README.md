@@ -53,5 +53,5 @@ const button = document.querySelector('button.open-search-modal');
 
 ## History 
 This project was inspired from by algolia DocSearch modal which is tightly binded with algolia, that's why we write this package to provide smooth search experience.
-The design provided by [Atiqur Rahman](@atiq-ur) and developed by [Saiful Alam](@4msar)
+The design provided by [Atiqur Rahman](//github.com/atiq-ur) and developed by [Saiful Alam](//github.com/4msar)
 
