@@ -41,6 +41,11 @@ const button = document.querySelector('button.open-search-modal');
     });
 ```
 
+## Example 
+![demo](./screenshot.png) 
+
+[Demo](https://search-modal.msar.me/)
+
 ## To Do 
 
 - Add documentation
