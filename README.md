@@ -13,24 +13,28 @@ const button = document.querySelector('button.open-search-modal');
         // initialize the search modal 
         autoInit: true,
         searchUrl: "", // to search from server 
-        queryParam: "query",
+        searchKey: "query",
         // only applicable when the `searchUrl` is not provided, to search from static data or preloaded data 
         data:[
             {
                 title: "Example",
+                category: "Category",
+                summary: "Summary of example one",
                 url: "/example"
             },
             {
                 title: "Example 2",
+                category: "Category",
+                summary: "Another brief example",
                 url: "/example-2"
             }
         ],
         // transform the data 
         transform: (data) => data.map(item=>({
             title: item.title, 
-            category: item.category.name, 
+            category: item.category, 
             excerpt: item.summary, 
-            url: item.link,
+            url: item.url,
         })),
         callback: (event, data) => {
             console.log({ event, data });
