@@ -45,6 +45,25 @@ const button = document.querySelector('button.open-search-modal');
     });
 ```
 
+## unpkg usage by @dandv
+```
+
+<link rel="stylesheet" href="https://search-modal.msar.me/dist/style.css">
+<script type="module">
+  import SearchModal from 'https://unpkg.com/search-modal?module';
+  const instance = SearchModal({ ... });
+
+  // Activate on Cmd/Ctrl+K
+  document.addEventListener("keydown", (event) => {
+    if ((event.ctrlKey || event.metaKey) && event.key === "k") {
+      event.preventDefault();
+      instance.open();
+    }
+  });
+</script>
+
+```
+
 ## Example 
 ![demo](./screenshot.png) 
 
